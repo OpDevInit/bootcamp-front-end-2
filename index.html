@@ -24,7 +24,7 @@
         }
 
         .header {
-            padding: 40px;
+            padding: 2.5rem;
         }
 
         .flex-container {
@@ -32,24 +32,25 @@
             justify-content: space-around;
         }
 
+        /*rem = unindade de medida responsiva; 1 rem = 16px  */
         .header-title {
             color: #006f6f;
-            font-size: 32px;
+            font-size: 2rem;
             font-weight: bold;
-            margin-bottom: 20px;
+            margin-bottom: 1.2rem;
         }
 
         .header-subtitle {
             color: #009e9e;
-            font-size: 18px;
+            font-size: 1.2rem;
             font-weight: 500;
-            margin-bottom: 20px;
+            margin-bottom: 0.9rem;
         }
 
         .col1 {
             background-color: #006a6a;
             width: 50%;
-            padding: 20px;
+            padding: 1.2rem;
             color: #fff;
 
         }
@@ -57,35 +58,35 @@
         .col2 {
             background-color: #009e9e;
             width: 50%;
-            padding: 10px 20px;
+            padding: 0.6rem 1.2rem;
             color: #fff;
-            font-size: 14px;
+            font-size: 0.87rem;
 
         }
 
         .subscription-title {
-            font-size: 20px;
+            font-size: 1.25rem;
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 1.2rem;
         }
 
         .price {
-            font-size: 26px;
+            font-size: 1.62rem;
             font-weight: 700;
         }
 
         .month-payment {
-            font-size: 15px;
+            font-size: 0.93rem;
             font-style: italic;
-            margin-left: 15px;
+            margin-left: 0.9rem;
         }
 
         .button {
             width: 100%;
-            padding: 15px 32px;
-            margin-top: 20px;
+            padding: 0.9rem 2rem;
+            margin-top: 1.2rem;
             color: #006a6a;
-            font-size: 16px;
+            font-size: 1rem;
             border-radius: 6px;
             border: none;
             background-color: #cccc;
@@ -100,7 +101,24 @@
 
         .image{
             text-align: center;
-            padding: 10px;
+            padding: 0.7rem;
+        }
+
+        @media(max-width: 620px){
+            html{
+                font-size: 14px;
+            }
+            .flex-container{
+                flex-direction: column;
+            }
+            .col1,.col2{
+                width: 100%;
+                box-sizing: border-box;
+            }
+            .container{
+                width: 95%;
+            }
+            
         }
     </style>
 </head>
