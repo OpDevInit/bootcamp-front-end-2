@@ -15,45 +15,88 @@
         .container {
             background-color: #E9E9E9;
             margin-top: 500px;
-            margin:auto ;
+            margin: auto;
             width: 600px;
             box-shadow: 1px 3px 8px 2px rgba(0, 0, 0, 0.164);
             border-radius: 5px;
             overflow: hidden;
-            
+
         }
 
-        .header{
+        .header {
             padding: 40px;
         }
 
-        .flex-container{
+        .flex-container {
             display: flex;
-            background-color: #006a6a;
             justify-content: space-around;
-            padding: 20px;
         }
 
-        .header-title{
+        .header-title {
             color: #006f6f;
             font-size: 32px;
-            font-weight:bold;
+            font-weight: bold;
             margin-bottom: 20px;
         }
 
-        .header-subtitle{
+        .header-subtitle {
             color: #009e9e;
             font-size: 18px;
             font-weight: 500;
             margin-bottom: 20px;
+        }
 
+        .col1 {
+            background-color: #006a6a;
+            width: 50%;
+            padding: 20px;
+            color: #fff;
 
+        }
+
+        .col2 {
+            background-color: #009e9e;
+            width: 50%;
+            padding: 20px;
+            color: #fff
+        }
+
+        .subscription-title{    
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+        }
+        .price{
+            font-size: 26px;
+            font-weight: 700;
+        }
+        .month-payment{
+            font-size: 15px;
+            font-style: italic;
+            margin-left: 15px;
+        }
+        .button{
+            width: 100%;
+            padding: 15px 32px;
+            margin-top: 20px;
+            color:  #006a6a;
+            font-size: 16px;
+            border-radius: 6px;
+            border: none;
+            background-color:#cccc;
+                cursor: pointer;
+                
+        }
+
+        /*Colocar ação ao passar o mouse em cima do botão*/
+        .button:hover{
+            background-color: #E9E9E9;
         }
     </style>
 </head>
 
 <body>
-    <div class = "container">
+    <div class="container">
         <div class="header">
             <div class="header-title">
                 Entre para a nossa comunidade!
@@ -63,18 +106,30 @@
             </div>
             <div>
                 Faça parte da nossa comunidade de desenvolvedores. <br>
-                Tenha suporte da nossa equiper e cresça mais rápido na sua carreira. 
+                Tenha suporte da nossa equiper e cresça mais rápido na sua carreira.
             </div>
         </div>
         <div class="flex-container">
-            <div>
-                Coluna 1
+            <div class="col1">
+                <div class="subscription-title">
+                    Assinatura mensal:
+                </div>
+                <div>
+                    <span class="price">R$99,99</span>
+                    <span class="month-payment">por mês.</span>
+                </div>
+                <div>
+                    Cancele a qualquer momento
+                </div>
+                <div>
+                    <button  class="button">Assine Agora</button>
+                </div>
             </div>
-            <div>
+            <div class="col2">
                 Coluna 2
             </div>
+
         </div>
-    </div>
 </body>
 
 </html>
